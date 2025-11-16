@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emotion Detector</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.2.0"></script>
+  <style>
+    body { font-family: Arial; text-align: center; background: #121212; color: white; }
+    video { width: 60%; border-radius: 10px; margin-top: 20px; }
+    #emotion { font-size: 32px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <h2>Real-Time Emotion Detection</h2>
+  <video id="video" autoplay playsinline></video>
+  <div id="emotion">Loading model...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
