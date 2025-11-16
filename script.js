@@ -1,7 +1,7 @@
 let model;
 
 async function loadModel() {
-  model = await tf.loadGraphModel("web_model/model.json");
+  model = await tf.loadGraphModel("model.json");
   document.getElementById("emotion").innerText = "Model Loaded ✔";
 }
 
@@ -36,3 +36,4 @@ async function processFrame() {
 
   document.getElementById("emotion").innerText = labels[index];
 }
+
